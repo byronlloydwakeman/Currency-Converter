@@ -1,0 +1,43 @@
+openapi: 3.0.3
+info:
+  title: Byron's Currency Converter Options API
+  description: Defines the API for evaluating the options for currency conversion
+  version: 1.0.0
+servers:
+  - url: 'https'
+paths:
+  /currency-conversion-option/1.0:
+    get:
+      description: Gets the available currency conversion options
+      operationId: getCurrencyConversionOptions
+      responses:
+        '200':
+          description: A Currency Converter response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CurrencyCodeListResponse'
+        default:
+
+          description: Error retrieving available currency conversion options
+components:
+  schemas:
+    CurrencyCodeListResponse:
+      type: object
+      properties:
+        validCurrencies:
+          type: array
+          description: A list of valid currency codes
+          items:
+            $ref: '#/components/schemas/CurrencyCodes'
+    CurrencyCodes:
+      type: string
+      enum:
+        - USD
+        - EUR
+        - GBP
+        - JPY
+        - AUD
+        - CAD
+        - CHF
+

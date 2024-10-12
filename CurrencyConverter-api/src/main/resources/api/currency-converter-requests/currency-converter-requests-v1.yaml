@@ -1,0 +1,55 @@
+openapi: 3.0.3
+info:
+  title: Byron's Currency Converter Requests API
+  description: Defines the API for submitting and retrieving currency conversion requests
+  version: 1.0.0
+servers:
+  - url: 'https'
+paths:
+  /currency-conversion/1.0/{fromCurrency}/{toCurrency}:
+    get:
+      description: Gets a currency conversion between two currencies
+      operationId: getCurrencyConversion
+      parameters:
+        - name: fromCurrency
+          in: path
+          required: true
+          description: The currency code to convert from
+          schema:
+            $ref: '#/components/schemas/CurrencyCodes'
+        - name: toCurrency
+          in: path
+          required: true
+          description: The currency code to convert to
+          schema:
+            $ref: '#/components/schemas/CurrencyCodes'
+      responses:
+        '200':
+          description: A successful currency conversion response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CurrencyConversionResponse'
+        default:
+          description: Error retrieving the conversion value
+components:
+  schemas:
+    CurrencyCodes:
+      type: string
+      enum:
+        - USD
+        - EUR
+        - GBP
+        - JPY
+        - AUD
+        - CAD
+        - CHF
+      description: A valid ISO currency code for conversion
+
+    CurrencyConversionResponse:
+      type: object
+      properties:
+        value:
+          type: number
+          description: The converted currency value (conversion result)
+          example: 0.85
