@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ccef88b-b0e5-42ef-85d6-c988ea9871d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-api/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-api/src/main/resources/api/currency-converter-options/currency-converter-options-v1.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-api/src/main/resources/api/currency-converter-requests/currency-converter-requests-v1.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-controller/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-controller/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-controller/src/main/java/org/example/option/v1/CurrencyConverterOptionsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-controller/src/main/java/org/example/request/v1/CurrencyConverterRequestsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter-web/src/main/webapp/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyConverter-web/src/main/java/CurrencyConversionOptionsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyConverter-web/src/main/java/CurrencyConversionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyConverter-web/src/main/resources/api/currency-converter-options/currency-converter-options-v1.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyConverter-web/src/main/resources/api/currency-converter-requests/currency-converter-requests-v1.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyConverter-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter-api/src/main/resources/api/currency-converter-options/currency-converter-options-v1.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter-api/src/main/resources/api/currency-converter-options/currency-converter-options-v1.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter-api/src/main/resources/api/currency-converter-requests/currency-converter-requests-v1.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter-api/src/main/resources/api/currency-converter-requests/currency-converter-requests-v1.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter-web/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2nIPSzdHIfTq7MDpHinPzZSxRYd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -53,11 +49,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven.CurrencyConverter [clean,package,install].executor": "Run",
+    "Maven.CurrencyConverter-api [clean,install].executor": "Run",
+    "Maven.CurrencyConverter-web [clean,compile].executor": "Run",
+    "Maven.CurrencyConverter-web [clean,install].executor": "Run",
+    "Maven.CurrencyConverter-web [clean,package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "azul-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/44785/Documents/JavaProjects/currencyconverter/currencyconverter",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,6 +71,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\44785\Documents\Currency-Converter\CurrencyConverter-web\src\main" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="SwaggerCodegen">
       <option name="activeConfigurationType" value="FILE" />

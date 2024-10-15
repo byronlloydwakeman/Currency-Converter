@@ -4,7 +4,7 @@ info:
   description: Defines the API for submitting and retrieving currency conversion requests
   version: 1.0.0
 servers:
-  - url: 'http://localhost:8081'
+  - url: 'https'
 paths:
   /currency-conversion/1.0/{fromCurrency}/{toCurrency}:
     get:
@@ -32,10 +32,6 @@ paths:
                 $ref: '#/components/schemas/CurrencyConversionResponse'
         default:
           description: Error retrieving the conversion value
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
     CurrencyCodes:
@@ -57,9 +53,3 @@ components:
           type: number
           description: The converted currency value (conversion result)
           example: 0.85
-    ErrorResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          description: Error message

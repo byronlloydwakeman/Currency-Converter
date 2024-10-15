@@ -4,7 +4,7 @@ info:
   description: Defines the API for evaluating the options for currency conversion
   version: 1.0.0
 servers:
-  - url: 'http://localhost:8081'
+  - url: 'https'
 paths:
   /currency-conversion-option/1.0:
     get:
@@ -18,11 +18,8 @@ paths:
               schema:
                 $ref: '#/components/schemas/CurrencyCodeListResponse'
         default:
+
           description: Error retrieving available currency conversion options
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
     CurrencyCodeListResponse:
@@ -43,10 +40,4 @@ components:
         - AUD
         - CAD
         - CHF
-    ErrorResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          description: Error message
 
